@@ -1,0 +1,19 @@
+/* Index.css */
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto asegura que el contenido se centrará verticalmente */
+    text-align: center; /* Opcional, pero ayudará a centrar el texto */
+  }
+  
+  .index-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .index-container p {
+    font-size: 1.2rem;
+  }
+  
