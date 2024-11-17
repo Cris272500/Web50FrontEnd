@@ -1,11 +1,38 @@
 import React from 'react';
+import { ChevronRight } from 'lucide-react';
 import './Index.css';
 
-export default function Index() {
+function Index() {
+  const sports = [
+    "Fútbol",
+    "Baloncesto",
+    "Tenis",
+    "Voleibol",
+    "Natación",
+  ];
+
   return (
-    <div className="index-container">
-      <h1>Bienvenido a la página de Index</h1>
-      <p>Has sido redirigido después de registrarte exitosamente.</p>
+    <div className="index-main-container">
+      {/* Main Content */}
+      <main className="index-main-content">
+        <section className="index-sport-selection">
+          <h2 className="index-section-title">Selecciona un Deporte</h2>
+          <div className="index-sports-grid">
+            {sports.map((sport) => (
+              <div key={sport} className="index-card">
+                <div className="index-card-content">
+                  <button className="index-btn-sport">
+                    {sport}
+                    <ChevronRight className="index-icon-chevron" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
+
+export default Index;

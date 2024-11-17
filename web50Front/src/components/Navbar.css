@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+/* Navbar Styles */
+.index-navbar {
+  border-bottom: 1px solid #374151; /* border-zinc-800 */
+  padding: 1rem 0;
+  background-color: #111827; /* bg-zinc-900 */
+}
+
+.index-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.index-button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para el botón activo */
+.index-btn-ghost.active {
+    color: #f59e0b; /* Cambia el color de fondo cuando está activo */
+  }
+
+/* Navbar Button Styles */
+.index-btn-ghost {
+  background: transparent;
+  color: #9ca3af; /* text-zinc-400 */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.index-btn-ghost:hover {
+  color: white;
+}
+
+.index-btn-login {
+  background-color: #f59e0b; /* bg-yellow-400 */
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.index-btn-login:hover {
+  background-color: #d97706; /* bg-yellow-500 */
+}
+
+/* Icon Styles */
+.index-icon {
+  width: 1rem;
+  height: 1rem;
+}
