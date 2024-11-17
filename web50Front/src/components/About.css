@@ -1,0 +1,89 @@
+/* General */
+.about-container {
+    min-height: 100vh;
+    background-color: #18181b; /* Similar a bg-zinc-900 */
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-card {
+    width: 100%;
+    max-width: 768px; /* Similar a max-w-4xl */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-card-header {
+    text-align: center;
+    border-bottom: 1px solid #e4e4e7; /* Similar a border-zinc-200 */
+    padding: 16px;
+    background-color: #f8fafc; /* Ligero fondo para el header */
+  }
+  
+  .about-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827; /* Color oscuro similar a texto principal */
+  }
+  
+  .about-card-content {
+    padding: 24px;
+  }
+  
+  /* Descripción */
+  .about-description {
+    text-align: center;
+  }
+  
+  .about-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    color: #6b7280; /* Similar a text-muted-foreground */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Grid */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .about-grid-item {
+    background-color: #f1f5f9; /* Similar a bg-zinc-100 */
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .about-grid-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+  }
+  
+  .about-grid-text {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas en pantallas grandes */
+    }
+  }
+  
